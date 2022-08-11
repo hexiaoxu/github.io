@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title>{$maccms.site_name} - 最新最全最快最方便的影视网站 - 好剧一网打尽</title>
+    <meta name="keywords" content="{$maccms.site_keywords}" />
+    <meta name="description" content="{$maccms.site_description}" />
+    {include file="public/include"}
+</head>
+<body>
+
+{include file="public/head"}
+{include file="index/index_banner"}
+{include file="index/index_tag"}
+<div class="qy-animation-content">
+{include file="index/index_like"}
+{if condition="$conch['youqicms']['vippc'] eq 1"}{$conch['youqicms']['index01']}{/if}
+{include file="index/index_hot"}
+{include file="index/index_tv"} 
+{if condition="$conch['youqicms']['vippc'] eq 1"}{$conch['youqicms']['index01']}{/if}
+{include file="index/index_variety"}
+{include file="index/index_movie"}
+{if condition="$conch['youqicms']['vippc'] eq 1"}{$conch['youqicms']['index02']} {/if}
+{include file="index/index_anime"} 
+{include file="index/index_soon"} 
+{if condition="$conch['youqicms']['vippc'] eq 1"}{$conch['youqicms']['index03']}{/if}
+{include file="index/index_special"}
+{include file="index/index_classic"}
+{include file="index/index_recommended"}
+{if condition="$conch['youqicms']['vippc'] eq 1"}{$conch['youqicms']['index04']}{/if}
+{include file="index/index_actor"}
+{include file="index/index_news"} 
+{if condition="$conch['youqicms']['vippc'] eq 1"}{$conch['youqicms']['index05']}{/if}
+{include file="index/index_live"} 
+{include file="index/index_hezuo"}
+{include file="index/index_link"}  
+
+ </div>
+
+
+
+{include file="public/foot"}
+</body>
+</html>
